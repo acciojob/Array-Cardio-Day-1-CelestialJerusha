@@ -33,6 +33,7 @@ export function myfilter() {
 		return value.year>=1500
 	}
 	const filtered = inventors.filter(filterYear);
+	console.log(filtered);
 
 }
 
