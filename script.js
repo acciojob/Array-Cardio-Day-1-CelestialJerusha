@@ -29,12 +29,11 @@ const people = [
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's and return the filtered array
 export function myfilter() {
-	function filterYear(value){
-		return value.year>=1500
-	}
-	const filtered = inventors.filter(filterYear);
-	console.log(filtered);
-
+	const fifteen = inventors.filter(item => {
+		if(item.year >= 1500 && item.year<1600){
+			return item;
+		}
+	})
 }
 
 // Array.prototype.map()
